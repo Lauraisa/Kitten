@@ -5,50 +5,56 @@
 }
 
 
-body {
-    background-image: url(../assets/sunny-day.jpg);
+.box {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    max-height: 100%;
+    height: 100vh;
     
 }
 h1 {
     color: yellow;
 
 }
+
 .imgCat {
+    background-repeat: no-repeat;
+    height: 50%;
     margin-left: 20%;
-    margin-top: 24%; 
+    margin-top: 36%;
+    position: relative;
 }
 
-@media only screen and (max-width:900px) {
+@media only screen and (min-width:1000px) {
+    .box {
+        background-image: url(../assets/sunny-day.jpg);
+    }
+    .imgCat {
+    background-image: url(../assets/kitten-medium.png); 
+   }
+
+}
+
+    
+    
+
+@media only screen and (max-width:1000px) {
     body  {
         background-image: url(../assets/night.jpg);
         
     }
-    img {
+    .imgCat {
         background-image: url(../assets/kitten-small.png);
-        margin-left: 25%;
-        background-repeat: no-repeat;
-    }
-    div {
-        background-size: cover;
+        
     }
 }
 
-@media only screen and (max-width:700px) {
+@media only screen and (max-width:700px) and (min-width:200px){
     body  {
         background-image: url(../assets/dawn.png);
-        
-        
     }
-    img {
+    .imgCat {
         background-image: url(../assets/kitten-large.png);
-        margin-left: 25%;
-        background-repeat: no-repeat;
-        background-size: cover;
         
-
     }
 }
